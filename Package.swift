@@ -4,10 +4,10 @@ import PackageDescription
 let package = Package(
     name: "Nuke Alamofire Plugin",
     platforms: [
-        .macOS(.v10_14),
-        .iOS(.v12),
-        .tvOS(.v12),
-        .watchOS(.v5)
+        .macOS(.v10_15),
+        .iOS(.v13),
+        .tvOS(.v13),
+        .watchOS(.v6)
     ],
     products: [
         .library(name: "NukeAlamofirePlugin", targets: ["NukeAlamofirePlugin"]),
@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/kean/Nuke.git",
-            from: "10.0.0"
+            from: "11.0.0-beta.1"
         ),
         .package(
             url: "https://github.com/Alamofire/Alamofire.git",
